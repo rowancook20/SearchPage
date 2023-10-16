@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import React from 'react';
 import './App.css';
-import DropdownMenu from './DropdownMenu';
+import termDropdown from './termDropdown';
 
 
 
@@ -12,7 +12,7 @@ function App() {
 
       <h2>Catalog Advanced Search</h2>
 
-      <DropdownMenu />
+      <termDropdown />
       
 
     </div>
