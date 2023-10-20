@@ -73,7 +73,7 @@ function SubjectDropdown() {
           </select>
         </div>
       ))}
-      <button onClick={addDropdown}>Add More</button>
+      <button onClick={addDropdown}>+ Add More...</button>
     </div>
   );
 }
