@@ -1,8 +1,20 @@
 import React, { useState } from 'react';
 
 function SubjectDropdown() {
-  // State to keep track of the selected subject
-  const [selectedSubject, setSelectedSubject] = useState('');
+  const [subjects, setSubjects] = useState(['']); // Initialize with one dropdown
+
+  // Function to handle adding a new dropdown
+  const addDropdown = () => {
+    setSubjects([...subjects, '']); // Add an empty subject
+  };
+
+  // Function to handle selecting a subject in a specific dropdown
+  const handleSubjectChange = (event, index) => {
+    const updatedSubjects = [...subjects];
+    updatedSubjects[index] = event.target.value;
+    setSubjects(updatedSubjects);
+  };
+
 
   // Define the subjects as options
   const courses = [
@@ -46,25 +58,22 @@ function SubjectDropdown() {
     'Women, Gender, and Sexuality', 
   ];
 
-  // Event handler for when a subject is selected
-  const handleSubjectChange = (event) => {
-    setSelectedSubject(event.target.value);
-  };
-
   return (
     <div>
-      <h2>Courses:</h2>
-      <select value={courses} onChange={handleSubjectChange}>
-        <option value="">Courses</option>
-        {courses.map((course, index) => (
-          <option key={index} value={course}>
-            {course}
-          </option>
-        ))}
-      </select>
-      {courses && (
-        <p>You selected: {selectedSubject}</p>
-      )}
+      <h2>Select Subjects:</h2>
+      {subjects.map((selectedSubject, index) => (
+        <div key={index}>
+          <select value={selectedSubject} onChange={(event) => handleSubjectChange(event, index)}>
+            <option value="">Courses</option>
+            {courses.map((course, optionIndex) => (
+              <option key={optionIndex} value={course}>
+                {course}
+              </option>
+            ))}
+          </select>
+        </div>
+      ))}
+      <button onClick={addDropdown}>Add More</button>
     </div>
   );
 }
