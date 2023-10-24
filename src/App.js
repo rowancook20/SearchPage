@@ -3,9 +3,8 @@ import React from 'react';
 import './App.css';
 import DropdownMenu from './DropdownMenu';
 import SubjectDropdown from './SubjectDropdown';
-import Major from './Major';
-import Minor from './Minor';
-import Concentration from './Concentration';
+import Navbar from './NavBar';
+
 
 
 
@@ -13,12 +12,8 @@ function App() {
   return (
     <div className="App">
       <h1>Hornet HQ</h1>
-      <Major/>
-      <Minor/>
-      <Concentration/>
-
-      <h2>Catalog Advanced Search</h2>
-
+      <h2>General Search</h2>
+      <Navbar/>
       <DropdownMenu />
       <SubjectDropdown />
 
