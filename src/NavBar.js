@@ -1,10 +1,12 @@
 import React from 'react';
 import './NavBar.css';
+import './App.css';
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="nav-item dropdown">
+      <span className="space-between">General Search</span>
         Major
         <div className="dropdown-content">
           <a href="https://computerscience.kzoo.edu/requirements/courses/course-sequence-for-majors/">Computer Science</a> <br />
