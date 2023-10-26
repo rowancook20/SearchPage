@@ -5,9 +5,9 @@ import './App.css';
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="nav-item dropdown">
       <span className="space-between">General Search</span>
-        Major
+       <div className="nav-item dropdown"> 
+       Major
         <div className="dropdown-content">
           <a href="https://computerscience.kzoo.edu/requirements/courses/course-sequence-for-majors/">Computer Science</a> <br />
           <a href="https://www.kzoo.edu/catalog/academic-programs/psychology/">Psychology</a>
