@@ -5,6 +5,7 @@ import DropdownMenu from './DropdownMenu';
 import SubjectDropdown from './SubjectDropdown';
 import Navbar from './NavBar';
 import './NavBar.css';
+import ClassPicker from './ClassPicker';
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Navbar/>
       <DropdownMenu />
       <SubjectDropdown />
+      <ClassPicker />
 
     </div>
   );
