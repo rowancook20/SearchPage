@@ -48,8 +48,6 @@
   height: auto;
   max-width: 350px;
   padding: 10px;
-  background-size: 100% 100%; /* Adjusted to make the background image fit the screen */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 
 .content-container {

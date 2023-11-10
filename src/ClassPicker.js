@@ -126,11 +126,11 @@ const ClassPicker = () => {
         <label>
           <input
             type="checkbox"
-            name="Miscellaneous Courses"
-            checked={selectedClasses.includes("Miscellaneous Courses")}
+            name="Courses Outside of Normal Schedule"
+            checked={selectedClasses.includes("Courses Outside of Normal Schedule")}
             onChange={handleCheckboxChange}
           />
-          Miscellaneous Courses
+          Courses Outside of Normal Schedule
         </label>
       </div>
     </div>
